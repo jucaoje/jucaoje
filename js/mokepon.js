@@ -168,18 +168,18 @@ function secuenciaAtaque() {
                 ataqueJugador.push('FUEGO')
                 console.log(ataqueJugador)
                 boton.style.background = '#112f58'  
-                boton.disabled = true 
+                boton.disabled = true
             } else if (e.target.textContent === '💧') {
                 ataqueJugador.push('AGUA')
                 console.log(ataqueJugador)
                 boton.style.background = '#112f58'
-                boton.disabled = true 
+                boton.disabled = true
 
             } else {
                 ataqueJugador.push('TIERRA')
                 console.log(ataqueJugador)
                 boton.style.background = '#112f58'
-                boton.disabled = true 
+                boton.disabled = true
 
             }
             ataqueAleatorioEnemigo()
