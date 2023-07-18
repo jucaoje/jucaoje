@@ -5,7 +5,7 @@ body {
   font-size: 25px;
   background-color: #041562;
  background-image: url(./assets/game-background-gde3e8bce8_1280.jpg);
- 
+ flex-wrap: wrap;
 }
 
 #seleccionar-mascota {
@@ -79,7 +79,7 @@ input:checked + label {
   box-sizing: border-box;
   border-radius: 20px;
   border-color: transparent;
-  width: 100px;
+  width: 80px;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -118,12 +118,8 @@ input:checked + label {
   align-items: center;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 500px) {
   .tarjetas, .tarjetas-ataques {
     flex-direction: column;
   }
-}
-footer {
- text-align: center;
-  padding-top: 40px;
 }
