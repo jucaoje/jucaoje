@@ -5,6 +5,7 @@ body {
   font-size: 25px;
   background-color: #041562;
  background-image: url(./assets/game-background-gde3e8bce8_1280.jpg);
+ flex-wrap: wrap;
 }
 
 #seleccionar-mascota {
@@ -117,7 +118,7 @@ input:checked + label {
   align-items: center;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .tarjetas, .tarjetas-ataques {
     flex-direction: column;
   }
