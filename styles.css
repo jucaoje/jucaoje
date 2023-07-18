@@ -123,3 +123,6 @@ input:checked + label {
     flex-direction: column;
   }
 }
+footer {
+ align: center;
+}
