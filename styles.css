@@ -2,7 +2,7 @@
 body {
 
   font-family: 'VT323', monospace;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #041562;
  background-image: url(./assets/game-background-gde3e8bce8_1280.jpg);
  flex-wrap: wrap;
@@ -118,11 +118,6 @@ input:checked + label {
   align-items: center;
 }
 
-@media (max-width: 500px) {
-  .tarjetas, .tarjetas-ataques {
-    flex-direction: column;
-  }
-}
 footer{
 text-align: center;
 padding: 30px;
@@ -134,39 +129,30 @@ align-items: center;
 justify-content: center;
 
 }
-#BttnArriba{
-  font-family: 'VT323';
-  font-size: 24px;
-  width: 180px;
+#ver-mapa button{
+  width:  80px;
   height: 40px;
-display: block;
-border-radius: 50px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid rgb(48, 1, 53);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: rgb(8, 0, 8);
 
 }
-#BttnAbajo{
-  font-family: 'VT323';
-  font-size: 24px;
-  width: 180px;
-  height: 40px;
-  display: block;
-  border-radius: 50px;
-}
-#BttnDerecha{
-  font-family: 'VT323';
-  font-size: 24px;
-  width: 180px;
-  height: 40px;
-  display: block;
-  margin-left: 200px;
-  border-radius: 50px;
+@media (max-width: 500px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
   }
-#BttnIzquierda{
-  font-family: 'VT323';
-  font-size: 24px;
-  width: 180px;
-  height: 40px;
-  display: block;
-  margin-left: -180px;
-  margin-top: -40px;
-  border-radius: 50px;
+}
+@media (max-width: 500px) {
+  #ver-mapa div{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  
+}
 }
