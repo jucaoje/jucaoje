@@ -209,7 +209,7 @@ function seleccionarMokepon(mascotaJugador) {
             mokepon: mascotaJugador
         }) 
     })
-} console.log(mascotaJugador)
+} 
 
 function extraerAtaques(mascotaJugador) {
     let ataques
