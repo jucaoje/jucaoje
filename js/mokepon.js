@@ -184,8 +184,9 @@ function seleccionarMascotaJugador() {
         mascotaJugador = inputRatigueya.id
     } else {
         alert('Selecciona una mascota')
-    }
+        location.reload()
 
+    }
     seleccionarMokepon(mascotaJugador)
     
     extraerAtaques(mascotaJugador)
@@ -273,7 +274,7 @@ function enviarAtaques() {
 }
 function obtenerAtaques(){
     fetch(`http://localhost:8080/mokepon/${enemigoId}/ataques`)
-        .then(function(){
+        .then(function(res){
             if (res.ok){
                 res.json()
                 .then(function({ ataques}){

@@ -96,7 +96,7 @@ app.get("/mokepon/:jugadorId/ataques", (req, res) => {
     const jugadorId = req.params.jugadorId || ""
     const jugador = jugadores.find((jugador)=>jugador.id === jugadorId)
     
-    res.end({
+    res.send({
         ataques: jugador.ataques || []
     })
   })
